@@ -103,12 +103,14 @@ class Game
 				@board.player_2 = @player2
 				return nil
 			else
+				@disc_color_taken = nil
 				@player1 = create_player(1)
 				@player2 = create_player(2)
 				@board.player_1 = @player1
 				@board.player_2 = @player2
 			end
 		else
+			@disc_color_taken = nil
 			@player1 = create_player(1)
 			@player2 = create_player(2)
 			@board.player_1 = @player1
